@@ -16,9 +16,10 @@ def get_mean(sampling_fun, N, M):
 	prom = np.array(prom)
 	return prom
 
-tamaño = 10000
-Numeros = [10, 100, 1000]
+tamaño = 10000 #Tamaño M establecido por el ejercicio
+Numeros = [10, 100, 1000] #Lista con los valores posibles de la variable N
 
+# Iteración que me genera todos los archivos de texto con el Output de get_mean
 for i in range(len(Numeros)):
 	sp1 = "sample_1_"+str(Numeros[i])+".txt"
 	sp2 = "sample_2_"+str(Numeros[i])+".txt"
